@@ -5,7 +5,7 @@ Page({
    * 页面的初始数据
    */
   data: {
-  
+    "msg": "联系我"
   },
 
   /**
@@ -62,5 +62,15 @@ Page({
    */
   onShareAppMessage: function () {
   
+  },
+
+  scanCode: function(){
+    wx.scanCode({
+      onlyFromCamera: false,
+      scanType: ['qrCode', 'barCode', 'pdf417'],
+      success: function (res) { },
+      fail: function (res) { },
+      complete: function (res) { },
+    })
   }
 })

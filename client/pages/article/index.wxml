@@ -1,2 +1,8 @@
 <!--pages/article/index.wxml-->
-<text>pages/article/index.wxml</text>
+<view>
+  <contact-button>
+    {{msg}}
+  </contact-button>
+
+  <map bindtap='scanCode' longitude='广州经度' latitude='广州维度' show-location='滘口'>中国地图</map>
+</view>
