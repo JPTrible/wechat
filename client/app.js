@@ -8,7 +8,8 @@ App({
     },
 
     onShow: function(options){
-
+        console.log(options);
+        console.log(this.globalData);
     },
 
     onHide: function(options){

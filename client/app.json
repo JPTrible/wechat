@@ -1,9 +1,8 @@
 {
   "pages":[
     "pages/index/index",
-    "pages/addCgi/addCgi",
-    "pages/logs/logs",
-    "pages/article/index"
+    "pages/article/index",
+    "pages/about/index"
   ],
   "window":{
     "backgroundColor":"#F6F6F6",
@@ -20,11 +19,13 @@
         "iconPath": "utils/images/list.png"
       },
       {
-        "pagePath": "pages/logs/logs",
-        "text": "日志"
-      },{
         "pagePath": "pages/article/index",
-        "text": "文章"
+        "text": "文章",
+        "iconPath":"utils/images/article.png"
+      },{
+        "pagePath": "pages/about/index",
+        "text": "关于",
+        "iconPath":"utils/images/about.png"
       }
     ]
   },
