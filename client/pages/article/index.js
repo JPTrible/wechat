@@ -45,12 +45,13 @@ Page({
       'object.text': 'changed data'
     });
   },
-  addNewField: function () {
+  addNewField: function (e) {
     this.setData({
       'newField.text': 'new data'
     });
 
     console.log(this.data);
+    console.log(e);
   },
 
   changeName: function(e){

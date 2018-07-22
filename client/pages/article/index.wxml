@@ -7,8 +7,8 @@
 <button bindtap="changeItemInArray"> Change Array data </button>
 <view>{{object.text}}</view>
 <button bindtap="changeItemInObject"> Change Object data </button>
-<view>{{newField.text}}</view>
-<button bindtap="addNewField"> Add new data </button>
+<view>{{newField.text}} {{alphaBeta}}</view>
+<button data-alpha-beta="1" data-alphaBeta="2" bindtap="addNewField"> Add new data </button>
 
 <template name="staffName">
   <view>
@@ -19,3 +19,6 @@
 <template is="staffName" data="{{...staffA}}"></template>
 <template is="staffName" data="{{...staffB}}"></template>
 <template is="staffName" data="{{...staffC}}"></template>
+
+<wxs src="./index.wxs" module = "tools" />
+<view>{{ tools.foo}}</view>

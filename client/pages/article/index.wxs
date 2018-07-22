@@ -1,0 +1,11 @@
+// /pages/article/index.wxs
+
+var foo = "'hello world' from index.wxs";
+var bar = function(d){
+  return d;
+}
+
+module.exports = {
+  foo: foo,
+  bar: bar
+};
